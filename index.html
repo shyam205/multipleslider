@@ -15,7 +15,7 @@
  
 
 
-  <div class="swiper-container">
+  <div class="swiper-container sfirst">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="box">
@@ -109,7 +109,7 @@
     </div>
    
        <div>
-      <div class="swiper-container swp">
+      <div class="swiper-container ssecond">
     <div class="swiper-wrapper">
       <div class="swiper-slide" id="imageslider">
         <div>
@@ -288,11 +288,11 @@
 
 <script>
   $(".swiper-container").each(function(elem, target){
-    var swp = target.swiper;
+    var ssecond = target.swiper;
     $(this).hover(function() {
-        swp.autoplay.stop();
+        ssecond.autoplay.stop();
     }, function() {
-        swp.autoplay.start();
+        ssecond.autoplay.start();
     });
 });
 </script>
