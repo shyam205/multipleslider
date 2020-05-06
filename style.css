@@ -14,18 +14,168 @@ html, body {
       margin: 0;
       padding: 0;
     }
-    .swiper-container {
+    /*for third slider*/
 
+    .swiper-container-sthird{
+      overflow: hidden;
+    }
+    .swiper-container-sthird .swiper-slide{
+      width: 100%;
+      height:100vh;
+      margin-left: auto;
+      margin-right: auto;
+      background-size:100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .swiper-container-sthird .swiper-slide img{
+      height: 100%;
+      width: 100%;
+      object-position: center;object-fit: cover;
+    }
+    .swiper-container-sthird .swiper-slide a{
+      color:white;
+      background-color: black;
+      padding:8px 10px;
+      border-radius:5px;
+       cursor: pointer;
+    }
+    .swiper-container-sthird .swiper-slide a:hover{
+      color:black;
+      background-color: white;
+      border:1px solid black;
+      border-radius: 5px;
+    }
+    .swiper-container-sthird .container-content{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+    transform: translateY(20vh);
+    padding: 0px 0px 0px 50px;
+    height: max-content;
+    margin: 0px auto 0px 100px;
+}
+.swiper-container-sthird .fashion-tag{
+  background-color:rgb(255,0,255);
+  display: inline-block;
+  padding:5px 10px;
+  border-radius: 2px;
+  color:white;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.swiper-container-sthird .container-content p{
+  font-family: sans-serif;
+  color:white;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.swiper-container-sthird .info{
+  display: flex;
+  margin-top:20px;
+  color:white;
+  justify-content: space-between;
+    width:400px;
+    font-size: 18px;
+}
+.swiper-container-sthird .info span{
+  display: inline-block;
+}
+
+.fa-user{
+ margin-right: 10px;
+}
+.fa-clock{
+  margin-right: 10px;
+}
+.fa-fire-alt{
+  margin-right: 10px;
+  color:orange;
+}
+.container-text{
+  position: relative;
+  padding: 50px 60px;
+  font-family: sans-serif;
+}
+.ptext{
+  font-size: 16px;
+}
+.container-text p{
+   line-height: 25px;
+}
+.swiper-container-sthird .swiper-slide:hover{
+       transform: translateY(0px);
+    }
+  @media screen and (max-width: 768px){
+    .swiper-container-sthird .container-content{
+    margin: 0px auto 0px 0px;
+   }
+   .swiper-container-sthird .container-content p{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+   }
+  }
+
+ /* @media screen and (max-width: 480px){
+  .container-content p{
+    font-size: 17px;
+  }
+ 
+ .info{
+  display:flex;
+  flex-direction:column;
+ }
+ /*.info div{
+  width:100%;
+  margin-top: 10px;
+ }*/
+ .info span{
+  margin-top:10px;
+  {
+
+ }
+ .container-text{
+  padding: 50px 30px;
+  }
+ .fa-user{
+ margin-right: 10px;
+}
+.fa-clock{
+  margin-right: 10px;
+}
+.fa-fire-alt{
+  margin-right: 10px;
+}
+ 
+}*/
+    /*   second slider */
+
+    .swiper-container {
       max-width:1000px;
       width:90%;
       margin:50px auto 20px auto;
-      padding-bottom: 50px !important;
+      padding-bottom: 50px;
     }
+     .sfirst{
+      max-width:1000px;
+     }
+     .ssecond{
+      max-width:1000px;
+     }
     #imageslider{
       
     }
+    #slidersecond{
+      width:max-content !important;
+    }
     .swiper-slide{
-      height:max-content;
+      padding: 0px;
+     /* width:max-content !important;*/
+      /*height:max-content;*/
       text-align: center;
       background: #fff;
        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
@@ -44,6 +194,7 @@ html, body {
       -webkit-align-items: center;
       align-items: center;
       overflow: hidden;
+      box-sizing: border-box;
     }
     .swiper-slide:hover{
       
@@ -58,6 +209,7 @@ html, body {
       position: absolute;
       left: :0;
       bottom: 0;
+      max-width: 300px;
       width:100%;
        height:100%;
        color:#fff;
@@ -129,6 +281,7 @@ html, body {
       position: absolute;
       left: :0;
       bottom: 0;
+      max-width: 300px;
       width:100%;
        height:63px;
       background-image:linear-gradient(#005C97,#363795);
@@ -136,7 +289,7 @@ html, body {
       box-sizing: border-box;
       overflow: hidden;
       cursor: pointer;
-      padding: 10px;
+      padding: 15px 30px;
       font-size: 18px;
     }
     .swiper-slide:hover .paragraph{
@@ -145,3 +298,50 @@ html, body {
     #image{
     height:400px;
    }
+  .boxsf{
+    margin-top: 50px;
+  }
+  .boxst{
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 768px){
+    .sfirst{
+      width:90%;
+      max-width: 647px;
+    }
+    .ssecond{
+      width:90%;
+      max-width: 647px;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .sfirst{
+      width:90%;
+      max-width: 300px;
+    }
+    .ssecond{
+      width:90%;
+      max-width: 300px;
+    }
+    .sfirst .swiper-slide:hover{
+      
+       transform: translateY(0px);
+    }
+    .sfirst .content{
+      opacity: 1;
+    }
+    .sfirst .card{
+      transform: translateY(250px);
+    }
+  }
+  @media screen and (max-width: 320px){
+    .sfirst{
+      width:95%;
+      max-width: 300px;
+    }
+    .ssecond{
+      width:95%;
+      max-width: 300px;
+    }
+  }
